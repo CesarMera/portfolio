@@ -1,3 +1,109 @@
 body{
     background: #f9f9f9;
+    
 }
+
+header .nav{
+    min-height: 80px;
+    overflow: hidden;
+    background: #EDE8E4;
+}
+
+header .logo h2,
+header .logo p{
+    font-size: 16px;
+    display: inline-block;
+}
+
+header .logo .icono{
+    color: red;
+}
+
+header .logo svg{
+    width: 20px;
+    height: 20px;
+}
+
+header .logo p{
+    color: grey;
+}
+
+header .menu .c1{
+    background: #EDE8E4;
+}
+
+header .menu .c2{
+    background: #EDE8E4;
+}
+
+header .menu .c3{
+    background: #EDE8E4;
+}
+ /*Main*/
+/*portafolio*/
+.portafolio{
+    border-top: 5px solid crimson;
+    background: white;
+}
+
+
+.portafolio .titulo{
+    font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen{
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a{
+    background: #676767;
+    display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img{
+    opacity: .3;
+}
+
+
+
+
+header .menu .c1:hover{
+    background: ghostwhite;
+}
+
+header .menu .c2:hover{
+    background: ghostwhite;
+}
+
+header .menu .c3:hover{
+    background: ghostwhite;
+}
+
+.ab{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+/*Media QUeris*/
+ @media screen and (max-width: 992px){
+    .logo{
+        height: 76px;
+    }
+
+    header .menu{
+        min-height: 76px;
+    }
+
+    header .menu a{
+        width: 100%;
+    }
+
+    .portafolio .galeria .contenedor-imagen:nth-child(1){order: 1;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2){order: 3;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3){order: 6;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4){order: 2;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5){order: 5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6){order: 4;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7){order: 7;}
+ }
